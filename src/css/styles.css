@@ -1,0 +1,96 @@
+.container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.container .slide {
+  width: 100vw;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.container .slide.show {
+  opacity: 1;
+}
+
+.containt {
+  background-color: #ffffff;
+  opacity: 0.76;
+  width: 620px;
+  margin-left: 180px;
+  border-radius: 10px;
+  padding: 65px 60px;
+}
+
+.title {
+  font-size: 50px;
+  margin-bottom: 80px;
+  font-weight: 400;
+}
+
+.paragraph {
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.view-more {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.slide.slide-pink {
+  background-image: url(../images/flor-rosa.png);
+}
+.slide.slide-yellow {
+  background-image: url(../images/flor-amarela.png);
+}
+.slide.slide-orange {
+  background-image: url(../images/montanha-laranja.png);
+}
+.slide.slide-blue {
+  background-image: url(../images/montanha-azul.png);
+}
+
+.view-more.pink {
+  color: #c50000;
+}
+.view-more.yellow {
+  color: #d9dd10;
+}
+.view-more.orange {
+  color: #a63a17;
+}
+.view-more.blue {
+  color: #10acdd;
+}
+
+.arrow {
+  position: absolute;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+}
+
+.forward-arrow {
+  right: 4%;
+}
+
+.left-arrow {
+  left: 4%;
+  transform: rotateY(180deg);
+}
+
+.opacity {
+  opacity: 0.4;
+  cursor: default;
+}
