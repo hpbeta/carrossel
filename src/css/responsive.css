@@ -26,4 +26,17 @@
         font-size: 25px;
     }
 
+    .arrow img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .forward-arrow{
+        margin-right: -38px;
+    }
+
+    .left-arrow{
+        margin-left: -38px;
+    }
+
 }
